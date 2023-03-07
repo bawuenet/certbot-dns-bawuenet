@@ -19,6 +19,15 @@ Option|Description|
 `--dns-bawuenet-propagation-seconds NUM`|waiting time for DNS to propagate before asking the ACME server to verify the DNS record. (Default: 5, Recommended: \>= 600)|
 `--dns-bawuenet-wait`|wait until the change is actually	present	in DNS which has the benefit of not having to set a large propagation delay.
 
+Credentials
+-----------
+
+Credentials are stored in an .ini file and referenced using the `--dns-bawuenet-credentials` parameter.
+
+    # MyBawue credentials used by Certbot
+    dns_bawuenet_username = bawueuser
+    dns_bawuenet_password = geheim
+
 Usage
 -----
 
