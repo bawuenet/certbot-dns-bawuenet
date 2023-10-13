@@ -6,6 +6,12 @@ Installation
 
     pip install 'git+https://github.com/bawuenet/certbot-dns-bawuenet'
 
+In case `certbot plugins` does not show the installed plugin, verify using `pip show certbot-dns-bawuenet` where it was installed.
+
+If it has been installed to `/usr/local/lib/python*/site-packages` certbot _might_ not find it. Either symlink to
+`/usr/lib/python*/site-packages` or reinstall using the `--prefix` parameter:
+
+    pip install --prefix=/usr 'git+https://github.com/bawuenet/certbot-dns-bawuenet'
 
 Named Arguments
 ---------------
