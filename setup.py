@@ -1,10 +1,10 @@
 from setuptools import setup
 from setuptools import find_packages
 
-version = "0.1.0"
+version = "1.0.0"
 
 install_requires = [
-    "certbot>=2.0.0",
+    "certbot>=1.1.0",
     "setuptools",
     "bawuenet-domainctl @ git+https://github.com/bawuenet/domainctl"
 ]
